@@ -1,0 +1,20 @@
+Package: coombs
+Type: Package
+Title: coombs: Psychometric unfolding methods
+Version: 0.1.0
+Date: 2023-06-22
+Authors@R: c(person("Vithor", "Franco", email = "vithorfranco@gmail.com", role = c("aut", "cre")),
+             person("Lucas", "Carvalho", email = "kucca8@gmail.com", role = c("aut")))
+Description: Implements psychometric methods for analyzing unfolding data. This includes both
+             scaling methods used as criteria as well as techniques. Currently, the package
+             handles only rank ordering data. The is also one automatically generating rank
+             ordering items using the binary tree structure procedure.
+License: file LICENSE
+Encoding: UTF-8
+BugReports: https://github.com/vthorrf/coombs/issues
+RoxygenNote: 7.1.1
+Imports: Rcpp (>= 1.0.10),
+         chatgpt (>= 0.2.0),
+         gtools (>= 3.9.4),
+         smacof (>= 2.1-5)
+LinkingTo: Rcpp
