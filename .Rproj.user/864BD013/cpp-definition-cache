@@ -1,16 +1,33 @@
 [
     {
-        "file": "C:/Users/vrfra/Documents/GitHub/coombs/src/rcpp_hello_world.cpp",
-        "file_last_write": 1687446380.0,
+        "file": "C:/Users/vrfra/Documents/GitHub/coombs/src/SideFunctions.cpp",
+        "file_last_write": 1695074277.0,
         "definitions": [
             {
-                "usr": "c:@F@rcpp_hello_world#",
+                "usr": "c:@F@pascalTriangle#I#",
                 "kind": 6,
                 "parent_name": "",
-                "name": "rcpp_hello_world",
-                "file": "C:/Users/vrfra/Documents/GitHub/coombs/src/rcpp_hello_world.cpp",
-                "line": 6,
-                "column": 6,
+                "name": "pascalTriangle(int)",
+                "file": "C:/Users/vrfra/Documents/GitHub/coombs/src/SideFunctions.cpp",
+                "line": 7,
+                "column": 11,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/vrfra/Documents/MEGA/Qualification/R packages/coombs/src/SideFunctions.cpp",
+        "file_last_write": 1695074277.0,
+        "definitions": [
+            {
+                "usr": "c:@F@pascalTriangle#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "pascalTriangle(int)",
+                "file": "C:/Users/vrfra/Documents/MEGA/Qualification/R packages/coombs/src/SideFunctions.cpp",
+                "line": 7,
+                "column": 11,
                 "hidden": false
             }
         ],

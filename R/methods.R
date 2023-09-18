@@ -15,6 +15,20 @@ print.CS_ranking <- function(x, ...) {
   cat("Average normalized Hamming Distance on Standard Sequence:", round(mean(x$NHD_SS),3),"\n")
   cat("Proportion of violations of the double cancellation axiom:", round(mean(x$DC),3),"\n")
 }
+summary.CS_ranking <- function(object, ...) {
+  cat("===== Scaling as a criterion:\n")
+  cat("Proportion of Observed Response Patterns Not Following Folding Condition:", round(object$FC,3),"\n")
+  cat("Proportion of Observed Response Patterns Not Following Single Path:", round(object$SP,3),"\n")
+  cat("Proportion of Observed Response Patterns Not Following Standard Sequence:", round(object$NS,3),"\n")
+  cat("Average Hamming Distance on Folding Condition:", round(mean(object$HD_FC),3),"\n")
+  cat("Average Hamming Distance on Single Path:", round(mean(object$HD_SP),3),"\n")
+  cat("Average Hamming Distance on Standard Sequence:", round(mean(object$HD_SS),3),"\n")
+  cat("Proportion of violations of the double cancellation axiom:", round(mean(object$DC),3),"\n\n")
+  cat("===== Scaling as a technique:\n")
+  print(object$MDU)
+  cat("Latent positions of stimuli on the underlying dimension:","\n")
+  print(object$delta_hat)
+}
 plot.CS_ranking <- function(x, ...) {
   dens <- density(x$theta_hat[,1])
   plot(dens, xlim=c(-1,1), main="Distribution of scores in the main dimension",
