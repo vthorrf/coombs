@@ -32,6 +32,7 @@ summary.CS_ranking <- function(object, ...) {
 plot.CS_ranking <- function(x, ...) {
   dens <- density(x$theta_hat[,1])
   plot(dens, xlim=c(-1,1), main="Distribution of scores in the main dimension",
-       xlab="Latent positions (vertical lines are the positions of the items)")
+       xlab="Latent positions (vertical lines are the positions of the items)", ...)
   abline(v=x$delta_hat[,1], lty=2, col="dark gray")
 }
+`%!in%` <- function(x,y) !{x %in% y}
