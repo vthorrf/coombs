@@ -1,4 +1,4 @@
-print.`CS_ranking` <- function(x, ...) {
+print.CS_ranking <- function(x, ...) {
   cat("Number of Total Unique Possible Response Patterns:", x$RP_NTotal,"\n")
   cat("Number of Unique Possible Response Patterns with Folding Condition:", x$RP_NFolding,"\n")
   cat("Number of Unique Possible Response Patterns with Single Path Condition:", x$RP_NSingle,"\n")
@@ -15,7 +15,7 @@ print.`CS_ranking` <- function(x, ...) {
   cat("Average normalized Hamming Distance on Standard Sequence:", round(mean(x$NHD_SS),3),"\n")
   cat("Proportion of violations of the double cancellation axiom:", round(mean(x$DC),3),"\n")
 }
-summary.`CS_ranking` <- function(object, ...) {
+summary.CS_ranking <- function(object, ...) {
   cat("===== Scaling as a criterion:\n")
   cat("Proportion of Observed Response Patterns Not Following Folding Condition:", round(object$FC,3),"\n")
   cat("Proportion of Observed Response Patterns Not Following Single Path:", round(object$SP,3),"\n")
@@ -29,7 +29,7 @@ summary.`CS_ranking` <- function(object, ...) {
   cat("Latent positions of stimuli on the underlying dimension:","\n")
   print(object$delta_hat)
 }
-plot.`CS_ranking` <- function(x, ...) {
+plot.CS_ranking <- function(x, ...) {
   dens <- density(x$theta_hat[,1])
   plot(dens, xlim=c(-1,1), main="Distribution of scores in the main dimension",
        xlab="Latent positions (vertical lines are the positions of the items)", ...)
